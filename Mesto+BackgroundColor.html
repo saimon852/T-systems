@@ -1,0 +1,312 @@
+﻿<!doctype html>
+<html lang ="sk">
+  <head>
+    <meta charset="UTF-8">
+    
+    <title>Mesto</title>
+     <!-- Bootstrap -->
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="print.css" type="text/css" media=print>
+
+  
+    </head>
+  
+  <body>
+        <div class="container">
+   <main>
+     <section>
+      <form>
+        
+            <button type="button" id="ChangeColor">Change Color </button>
+            <script>
+                    var color = ["black","white"];
+                    
+                    var p = 0;
+                    document.querySelector("button").addEventListener("click", function(){
+                        p = p < color.length ? ++p : 0;
+                        document.querySelector("body").style.background = color[p]
+                        if(color.background="white")
+                        document.querySelector('h1').style.color = "black"
+                      
+    
+    
+                        }
+                    )
+                
+    </script>
+
+       </form>
+       </section>
+
+       <div class="topnav">
+        <a class="active" href="#Michalovce">Michalovce</a>
+        <a href="#Historia">Historia</a>
+        <a href="#Rekordy">Rekordy</a>
+        <a href="#Osobnosti">Osobnosti</a>
+      </div>
+       
+ <img src="https://smartcitiesklub.sk/wp-content/uploads/2018/09/Michalovce-titulka.jpg" height="500" width="1200" title="Europass" 
+ alt="Europass">
+     <section>
+        <div class="row">
+            <div class="col-sm-4 col-md-3">
+                <header>
+                    <h3><span  class=" pull-right">&nbsp;</span></h3>
+                </header>
+            </div>
+            <div class="col-sm-8 col-md-9">  
+   
+
+   
+    <div><h1 id="Michalovce">Michalovce</h1></div>
+  
+    <aside id="pocasie"></aside>
+         <dl> 
+	<dt><i>Lokalita:</i></dt> 
+	<dd>Východné Slovensko</dd>
+	<dt><i>Súradnice:</i></dt>
+	<dd>48.7557° N, 21.9184° E </dd>
+      <dt><i>Primátor:</i></dt>
+      <dd>Viliám Záhorčak </dd>
+            <dt><i>Počet obyvateľov:</i></dt>
+      <dd>39,396 </dd>
+           <dt><i>Stránka mesta:</i></dt>
+      <dd><a href="http://www.michalovce.sk/sk" target="_blank">www.michalovce.sk</a> <br> </dd> 
+          
+                       </dl>
+   </div>
+        </div>
+    </section>
+          
+ <hr>
+         <h3>  Obyvatelia </h3>
+      
+     <section>
+        <div class="row">
+            <div class="col-sm-4 col-md-3">
+                <header>
+                    <h3><span  class=" pull-right">&nbsp;</span></h3>
+                </header>
+            </div>
+            <div class="col-sm-8 col-md-9">
+           <table> 
+	<tbody>
+	 <tr> <th>Rok</th> <th>Narodenie</th>  <th>Umrtnosť</th>  <th>Počet obyvateľov s trvalým pobytom</th> <th>Sobáš</th> <th>Rozvod</th></tr>
+	 <tr> <td>2015</td> <td>1120</td> <td>1005</td>  <td>101584</td> <td>562</td>  <td>700</td>  </tr>
+	 <tr> <td>2016</td> <td>1078</td> <td>1507</td>  <td>102547</td> <td>502</td>  <td>685</td></tr>
+      <tr> <td>2017</td> <td>980</td> <td>680</td>  <td>101588</td><td>408</td>  <td>502</td> </tr>
+            <tr> <td>2018</td> <td>1184</td> <td>795</td>  <td>105487</td><td>485</td>  <td>369</td>  </tr>
+    <tr> <td>2019</td> <td>1184</td> <td>841</td>  <td>106871</td> <td>398</td>  <td>712</td> </tr>
+
+	</tbody>
+</table>
+              </div>
+              </div>
+             </section>
+            <section>
+        <div class="row">
+            <div class="col-sm-4 col-md-3" >
+                <header>
+                    <h3><span  class="pull-right">Najnavštevovanejšie lokality</span></h3>
+                                                 
+                </header>
+            </div>
+            <div class="col-sm-8 col-md-9">
+                    <h3>2019</h3>
+              <ul>
+                    <li>
+                       Zemplinská Šírava 
+                    </li>
+                          <li>
+Morské oko                    </li>
+                    <li>
+                        Vinné jazero
+                    </li>
+              <li>
+Močarany                    </li>
+              <li>
+                        Pozdišovský rybník
+                    </li>
+                </ul>
+              
+            </div>
+        </div>
+    </section>
+    <div><h3 id="Historia">Historia</h3></div>
+    <section>
+        <div class="row">
+            <div class="col-sm-4 col-md-3">
+                <header>
+                    <h3><span  class="pull-right">&nbsp;</span></h3>
+                </header>
+            </div>
+            <div class="col-sm-8 col-md-9">
+                    <h3>Po roku 1945
+</h3>
+                    <span>Charakter prevažne poľnohospodárskeho mesta, ktoré mali Michalovce do obdobia roku 1945, zmenil značný počet novovzniknutých priemyselných podnikov po roku 1945. V 50 – 60tych rokoch 20. storočia pribudli závody na spracovanie poľnohospodárskych produktov, textilu, strojárske a stavebné podniky. Medzi ne patrili Poľnohospodársky nákupný a zásobovací podnik, Východoslovenské mliekarne, Východoslovenské pekárne a cukrárne, Slovenské sladovne, Východoslovenské hydinárske závody, Odevné závody, Odeta – výrobné družstvo. Jedným z najväčších závodov je Vihorlat Snina s exportom svojich výrobkov a z ďalších sú to Naftové doly, Závod na výrobu keramických dlaždíc, Pozemné stavby, Inžinierske stavby.
+                 
+                    </span>
+           
+                    
+            </div>
+        </div>
+    </section>
+    <div><h3 id="Rekordy">Rekordy</h3></div>
+    
+           <section>
+             <hr>
+        <div class="row">
+            <div class="col-sm-4 col-md-3">
+                <header>
+                    <h3><span  class="pull-right">&nbsp;</span></h3>
+                </header>
+            </div>
+            <div class="col-sm-8 col-md-9">
+                    <h3>Kruhoé objazdy
+</h3>
+                    <p>13 Kruhových objazdov
+                    </p>
+                    <ol>
+                        <li>ul.Okružna
+
+                        </li>
+                        <li>ul.Rázusova
+                        </li>
+                       <li> ul.Hollého
+                        </li>
+                       <li> ul.Špitalska
+                        </li>
+                       <li> ul.Okružna
+                        </li>
+                       <li> ul.Železničná stanica
+                        </li>
+                       <li> ul.Oc Zemplin
+                        </li>
+                       <li> ul.Masarykova
+                        </li>
+                       <li> ul.Štefanikova
+                        </li>
+                       <li> ul.Obchodna
+                        </li>
+                       <li> ul.Humennska
+                        </li>
+                       <li> ul.Partizánska
+                        </li>
+                      <li> Saleziani
+                        </li>
+                      
+                        
+                    </ol>
+            </div>
+        </div>
+    </section>
+    <div><h3 id="Osobnosti">Známe Osobnosti</h3></div>
+           <section>
+        <div class="row">
+            <div class="col-sm-4 col-md-3">
+                <header>
+                    <h3><span  class="pull-right">&nbsp;</span></h3>
+                </header>
+            </div>
+            <div class="col-sm-8 col-md-9">
+                 
+                    <p>Slovenské umenie
+                      
+                    </p>
+                    <ul>
+                        <li>Miroslav Halás(prozaik)
+
+                        </li>
+                        <li> Pavol Horov(básnik)
+                        </li>
+                      <li> Pavol Plutko(kritik)
+                        </li>
+                        
+                    </ul>
+              <p>Športovci 
+                      
+                    </p>
+                    <ul>
+                        <li>Antón Frolo(hadzanár)
+
+                        </li>
+                        <li> Ladislav Šesták(tréner)
+                        </li>
+                    
+                    </ul>
+              <p>Výtvarnící a umelci 
+                      
+                    </p>
+                    <ul>
+                        <li>Eduard Bilndas(herec)
+
+                        </li>
+                        <li> Štefan Bubán(maliar)
+                        </li>
+                      <li>Cyril Ducko(herec)
+
+                        </li>
+                        <li> Ludovít Dobozy(maliar a pedagóg)
+                        </li>
+                    
+                    </ul>
+            </div>
+        </div>
+            
+           
+    </section>
+
+         <hr>
+  
+    <section>
+        <div class="row">
+            <div class="col-sm-4 col-md-3" >
+                <header>
+                    <h3><span  class="pull-right"> Geografická poloha </span></h3>
+                </header>
+            </div>
+            <div class="col-sm-8 col-md-9">
+              <span>Poloha mesta vytvára optimálne podmienky pre jeho komunikačné napojenie na dopravné ťahy medzinárodného významu vo východo - západnom smerovaní (E50). Michalovce ležia na najvýznamnejšej dopravnej tepne smerom na Ukrajinu (vzdialenosť hraníc 30 km). Hranice s Maďarskou republikou sú vo vzdialenosti 54 km, vzdialenosti od významných centier Slovenska sú - 60 km od Košíc, 500 km od Bratislavy.
+
+Prevažné územie mesta sa nachádza v nadmorskej výške 114 metrov. Podnebie v Michalovciach je teplé, s priemernou ročnou teplotou 9 - 10º, priemerná dĺžka slnečného svitu v oblasti Michaloviec je 2 200 hodín ročne s počtom letných dní 50.
+
+Mesto má rozlohu 5 280,8 ha, je súčasťou Východoslovenskej nížiny. Okolie mesta sa vyznačuje úrodnou rovinou a na jeho severovýchode sa vyníma obzor Vihorlatských vrchov vulkanického pôvodu so svojou dominantou o výške 1075 m. n. m.
+V bezprostrednom dotyku mesta sa nachádza vodná nádrž – Zemplínska šírava využívaná ako rekreačné stredisko.</span>
+  
+                  </div>
+                  </div>
+              </section>
+    <hr>
+
+      
+   <div> > 24. 11. 2019 © Evropská unie, 2002-2017 | http://europass.cedefop.europa.eu Stránka 1 / 2  </div>
+   
+
+   
+    
+  </main>
+  <script>
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+      
+   
+      
+        window.jQuery || document.write('<script src="js\/jquery.min.js"><\/script>');
+      </script>
+   
+      <script src="JS/mesto.js"></script>
+   
+   
+      <!-- Bootstrap core JavaScript
+          ================================================== -->
+          <!-- Placed at the end of the document so the pages load faster -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+          <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+  
+    </div>
+   </body>
+</html>

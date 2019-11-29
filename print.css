@@ -1,0 +1,112 @@
+
+    img {
+        max-width: 1200px;
+        -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+        }
+        
+      
+        button{
+            background-color: black;
+            color: white;
+			font-size: 19px;
+		}
+        
+
+        .topnav {
+          background-color: black;
+          overflow: hidden;
+        }
+        
+        
+        .topnav a {
+          float: left;
+          color: black;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 15px;
+        }
+        
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+       
+        .topnav a.active {
+          background-color: black;
+          color:black;
+        }
+
+    
+        
+    span{font-size: 20px;
+      color: white;
+    font-style: Italic;
+    }
+    
+    a {font-size: 0px;
+      color:white;
+    }
+    
+    div {font-size: 20px;
+        color: black;
+      font-style: Italic;
+      }
+    p {font-size: 20px;
+      color: black;
+    font-style: Italic;
+    }
+    
+     h1 {font-size: 90px;
+      color: black;
+    font-style: Italic;
+        
+    }
+    
+    h2 {font-size: 70px;
+      color: black;
+    font-style: italic;
+    }
+    
+   
+    
+    td
+    {  border: 1px solid black;
+    font-size: 1.5Rem;
+    color:black}
+    
+    th
+    {  border: 1px solid black;
+    font-size: 1.5Rem;
+    color:black;
+    font-style: italic;
+  }
+    hr
+    {  border-top: 0px solid white;
+    }
+ div  {
+    font-size: 1.2Rem;
+    color:black;
+      }
+     
+      dl
+    {
+    font-size: 2Rem;
+    color:white;
+      }
+    dt
+    {
+    font-size:1.2Rem;
+    color: black;
+      }
+      li{
+        font-size:1.2Rem;
+        color: black;
+          }
+          span{
+            font-size:1.2Rem;
+            color: black;
+              }
