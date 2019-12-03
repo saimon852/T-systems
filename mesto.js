@@ -7,11 +7,13 @@ function vypis(udaje){
              spracuj);
              
 function spracuj(udaje){
-    const pocasieText = `Teplota: ${udaje.main.temp}, Tlak: ${udaje.main.pressure}, Oblačnosť: ${udaje.clouds.all}`;
+    const pocasieText = `Teplota: ${udaje.main.temp}, Tlak: ${udaje.main.pressure}, Oblačnosť: ${udaje.clouds.all}, Rýchlost vetra: ${udaje.wind.speed},Viditelnost: ${udaje.main.humidity}`;
     $("#pocasie").html(pocasieText);
    }
 
-
+   function swapStyleSheet() {
+    document.getElementById("Mesto"); 
+ }
 function initate() {
     var style1 = document.getElementById("Mod1");
     var style2 = document.getElementById("Mod2");
