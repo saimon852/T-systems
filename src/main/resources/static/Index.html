@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- Bootstrap -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+
+
+
+<title>Gamestudio!</title>
+<style>
+body {
+	background-image: url(https://wallpaperaccess.com/full/528810.jpg);
+	background-attachment: auto background-repeat: no-repeat;;
+	background-position: right top;
+	background-size: 1980px 1400px;
+}
+form action {
+	background-color: black;
+}
+
+h1 {
+	font-size: 170px;
+	color: yellow;
+	font-style: italic;
+}
+div.game {
+	color: white;
+	font-size:25px;
+}
+div.farba {
+	color: white;
+}
+div.farba1 {
+	color: black;
+}
+
+div.pozadie2 {
+	background-color: black;
+	font-size: 13px;
+}
+div.pozadie3 {
+	background-color: white;
+	font-size: 13px;
+}
+
+span {
+	font-size: 10px;
+	color: Pink;
+	font-style: italic;
+}
+
+
+.deconstructed {
+  position: relative;
+  margin: auto;
+  height: 0.9em;
+  color: transparent;
+  font-family: 'Cambay', sans-serif;
+  font-size: 10vw;
+  font-weight: 1200;
+  letter-spacing: -0.02em;
+  line-height: 1.03em;
+}
+
+.deconstructed > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  pointer-events: none;
+  font-size: 120px;
+}
+
+.deconstructed > div:nth-child(1) {
+  -webkit-mask-image: linear-gradient(black 55%, transparent 55%);
+  mask-image: linear-gradient(black 55%, transparent 55%);
+  animation: deconstructed1 5s infinite;
+  color: white;
+}
+
+.deconstructed > div:nth-child(2) {
+  -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+  mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+  animation: deconstructed2 5s infinite;
+  color: white;
+}
+
+.deconstructed > div:nth-child(3) {
+   -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+  mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+  animation: deconstructed3 5s infinite;
+  color: white;
+}
+
+.deconstructed > div:nth-child(4) {
+   -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
+  mask-image: linear-gradient(transparent 75%, black 75%);
+  animation: deconstructed4 5s infinite;
+  color: white;
+}
+
+@keyframes deconstructed1 {
+  0% {
+    transform: translateX(100%);
+  }
+  26% {
+    transform: translateX(0%);
+  }
+  83% {
+    transform: translateX(-0.1%);
+  }
+  100% {
+    transform: translateX(-120%);
+  }
+}
+
+@keyframes deconstructed2 {
+  0% {
+    transform: translateX(100%);
+  }
+  24% {
+    transform: translateX(0.5%);
+  }
+  82% {
+    transform: translateX(-0.2%);
+  }
+  100% {
+    transform: translateX(-125%);
+  }
+}
+
+@keyframes deconstructed3 {
+  0% {
+    transform: translateX(100%);
+  }
+  22% {
+    transform: translateX(0%);
+  }
+  81% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-130%);
+  }
+}
+
+@keyframes deconstructed4 {
+  0% {
+    transform: translateX(100%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-135%);
+  }
+  
+  
+}
+div.hra {
+padding-left: 5px;
+padding-right: 5px;
+width: 30.33%;
+float:left;
+}
+
+</style>
+</head>
+<body>
+<div class="pozadie2">
+<form action="/login">
+
+						<div class="farba">Login</div> <input type="text" name="name" /> <span>&nbsp;</span><div class="farba">Password</div> <input
+							type="password" name="password" /> <br /><input type="submit"
+							value="Login" />
+							</form>
+							</div>
+					
+						<div class="pozadie3">
+<form action="/register">
+
+						<div class="farba1">Register</div> <input type="text" name="name" />  <div class="farba1">Password</div><input
+							type="password" name="password" /> <br /><input type="submit"
+							value="Registration" />
+							<br>
+							<br>
+							</form>
+							</div>
+							
+						
+							
+	<div class="container">
+
+		<section>
+			<div class="row">
+				<div class="col-sm-4 col-md-3">
+					<header>
+						<h3>
+							<span class=" pull-right">&nbsp;</span>
+						</h3>
+					</header>
+				</div>
+				<div class="col-sm-8 col-md-9">
+				<div class="deconstructed">
+				
+				
+				
+					
+				
+  
+  <div>GameStudio!</div>
+  <div>GameStudio!</div>
+  <div>GameStudio!</div>
+  <div>GameStudio!</div>
+</div>
+
+
+<div th:if="${@mainController.logged}" class="meno" 
+						th:text="${@mainController.LoggedPlayer.name}" />
+					<br /> </span>
+
+					<form action="/logout">
+						<input type="submit" value="Logout" />
+					</form>
+
+
+
+				
+					<div class="hra">
+					<div class="game">nPuzzle 16</div>
+					<a href="http://localhost:8080/puzzle/" target="_blank"><span
+						class="pull-right"><img src='https://previews.123rf.com/images/corbendallas/corbendallas1805/corbendallas180500024/100816721-9-colorful-background-puzzle-infographic-presentation-jigsaw-puzzle-banner-vector-illustration-templ.jpg'
+						width="400" height="250"></a></div>
+					<br>
+<div class="hra">
+					<div class="game">GuessNumber</div>
+					<a href="http://localhost:8080/guessnumber/" target="_blank"><span
+						class="pull-right"><img src=http://www.liberaldictionary.com/wp-content/uploads/2018/11/numbers.jpg width="400" height="250"></a></div> <br>
+<div class="hra">
+					<div class="game">Minesweeper</div>
+					<a href="http://localhost:8080/minesweeper" target="_blank"><span
+						class="pull-right"><img src='https://cdn.moreappslike.com/headers/puzzle.games.free.minesweeper.mine.sweeper-header.png'width="400" height="250"></a></div> <br>
+
+
+
+				</div>
+			</div>
+		</section>
+</body>
+</html>
+
