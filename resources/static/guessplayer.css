@@ -1,0 +1,50 @@
+
+body {
+	background-image: url(https://i.pinimg.com/originals/c5/32/66/c5326692e5c7b28dd2ad3bdc1ae3cbed.gif);
+	background-attachment: auto background-repeat: no-repeat;
+	background-position: right top;
+	background-size: 2120px 1200px;
+}
+div.meno {
+	font-size: 70px;
+	color: Black;
+	font-style: italic;
+	text-decoration: underline;
+}
+div.rating {
+font-size:50px;
+color:Red;}
+ol.pozadie {
+	font-size: 20px;
+	color: white;
+	font-style: italic;
+	background: Green;
+}
+
+ol.pozadie1 {
+	font-size: 20px;
+	color: Green;
+	font-style: italic;
+}
+
+input[type=text] {
+	background-color: green;
+	color: black;
+}
+div.smajlik {padding-left: 5px;
+padding-right: 5px;
+width: 15.33%;
+float:left;
+}
+div.column {
+padding-left: 5px;
+padding-right: 5px;
+width: 15.33%;
+float:left;
+}
+h3 {
+color:yellow;
+}
+div.mess{
+font-size:25px;
+color:yellow;}

@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<title>blue</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- Bootstrap -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+
+<link rel="stylesheet" href="/index2.css" type="text/css">
+<script src="/JS/time.js"></script>
+
+</head>
+<body class="time" onload="startTime()">
+	<div class="time" id="txt"></div>
+
+<div class="pozadie2">
+<form action="/login">
+						<div class="farba">Login</div> <input type="text" name="name" /> <span>&nbsp;</span><div class="farba">Password</div> <input
+							type="password" name="password" /> <br /><input type="submit"
+							value="Login" />
+							</form>
+							</div>
+
+						<div class="pozadie3">
+<form action="/register">
+
+						<div class="farba1">Register</div> <input type="text" name="name" />  <div class="farba1">Password</div><input
+							type="password" name="password" /> <div class="farba1">Re-enter Password</div><input
+							type="password" name="password1" /> <br /><input type="submit"
+							value="Registration" />
+							<br>
+							<br>
+							</form>
+							</div>
+							<form class="tlacidlo" action="/index1">
+				<input type="submit"
+					value="White">
+					</form>
+						<div th:if="${not @mainController.logged}"
+						class="mess" th:text="${@mainController.message}"></div>
+						
+							
+	<div class="container">
+
+		<section>
+			<div class="row">
+				<div class="col-sm-4 col-md-3">
+					<header>
+						<h3>
+							<span class=" pull-right">&nbsp;</span>
+						</h3>
+					</header>
+				</div>
+				<div class="col-sm-8 col-md-9">
+				<div th:if="${@mainController.logged}" class="meno" 
+						th:text="${@mainController.LoggedPlayer.name}" />
+						
+						<div th:if="${@mainController.logged}">
+						<form action="/logout">
+						<input type="submit" value="Logout" />
+					</form>
+					<br /> </div>
+				<div class="deconstructed">
+				
+				
+  
+  <div>GameStudio!</div>
+  <div>GameStudio!</div>
+  <div>GameStudio!</div>
+  <div>GameStudio!</div>
+</div>
+
+
+
+					
+
+
+
+
+				
+					<div class="hra">
+					<div class="game">nPuzzle 16</div>
+					<a href="http://localhost:8080/puzzle/" target="_blank"><span
+						class="pull-right"><img class=gamee src='https://previews.123rf.com/images/corbendallas/corbendallas1805/corbendallas180500024/100816721-9-colorful-background-puzzle-infographic-presentation-jigsaw-puzzle-banner-vector-illustration-templ.jpg'
+						width="250" height="170"></a></div>
+<div class="hra">
+					<div class="game">Guess Number</div>
+					<a href="http://localhost:8080/guessnumber/" target="_blank"><span
+						class="pull-right"><img class=gamee src=http://www.liberaldictionary.com/wp-content/uploads/2018/11/numbers.jpg width="250" height="170"></a></div>
+						
+						<div class="hra">
+					<div class="game">Minesweeper</div>
+					<a href="http://localhost:8080/minesweeper" target="_blank"><span
+						class="pull-right"><img class=gamee src='https://cdn.moreappslike.com/headers/puzzle.games.free.minesweeper.mine.sweeper-header.png'width="250" height="170"></a></div>
+						
+						<div class="hra">
+					<div class="game">Guess Football Players</div>
+					<a href="http://localhost:8080/guessplayer/" target="_blank"><span
+						class="pull-right"><img class=gamee src='https://i.ytimg.com/vi/VxjUmvdoE4k/hqdefault.jpg'
+						width="250" height="170"></a></div>
+						
+						<div class="hra">
+					<div class="game">Guess Pokemon</div>
+					<a href="http://localhost:8080/guesspokemon/" target="_blank"><span
+						class="pull-right"><img class=gamee src=https://i.ytimg.com/vi/Omgm4uCLvX4/maxresdefault.jpg width="250" height="170"></a></div>
+						
+						<div class="hra">
+						<div class="game">English words</div>
+					<a href="http://localhost:8080/word/" target="_blank"><span
+						class="pull-right"><img class=gamee src=https://n6s6b6w9.stackpathcdn.com/client/w_719,q_lossy,ret_wait/https://appgrooves.com/cdn/mc/GAME_WORD/4_w1200.jpg width="250" height="170"></a></div>
+						<div class="hra">
+						<div class="game">Animals Translator</div>
+					<a href="http://localhost:8080/translator/" target="_blank"><span
+						class="pull-right"><img class=gamee src=https://ichef.bbci.co.uk/news/410/cpsprodpb/BEEB/production/_108557884_gettyimages-486237421.jpg width="250" height="170"></a></div>
+					</div>		<div class="container">
+					
+					<div class="container">
+			
+
+				</div>
+			</div>
+		</section>
+		<br>
+		<span>As a precondition for you using the Services, you must agree to this Agreement.
+BY AGREEING TO THIS AGREEMENT, YOU REPRESENT YOU ARE AT LEAST 13 YEARS OLD. IN CASE YOU DON´T HAVE THE LEGAL CAPACITY TO ENTER THIS AGREEMENT, YOU REPRESENT THAT YOUR LEGAL GUARDIAN OR ANYONE BEING LEGALLY RESPONSIBLE FOR YOUR INTERESTS HAS AGREED TO TERMS OF THIS AGREEMENT.
+
+BY ACCESSING THE SERVICES, YOU AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT AND THE TERMS SET FORTH BELOW. IN CASE YOU DON´T AGREE TO THIS AGREEMENT, YOU MAY NOT USE THE SERVICES.</span>
+</body>
+</html>
+

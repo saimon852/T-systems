@@ -1,0 +1,50 @@
+
+body {
+	background-image: url(https://i.kinja-img.com/gawker-media/image/upload/t_original/pvnoaz2xnxxmi1vyecr0.gif);
+	background-attachment: auto background-repeat: no-repeat;
+	background-position: right top;
+	background-size: 1960px 1200px;
+}
+div.meno {
+	font-size: 50px;
+	color: blue;
+	font-style: italic;
+}
+div.rating {
+font-size:50px;
+color:red;}
+ol.pozadie {
+	font-size: 20px;
+	color: Green;
+	font-style: italic;
+	background: yellow;
+}
+
+ol.pozadie1 {
+	font-size: 20px;
+	color: yellow;
+	font-style: italic;
+}
+
+input[type=text] {
+	background-color: yellow;
+	color: black;
+}
+div.smajlik {padding-left: 5px;
+padding-right: 5px;
+width: 15.33%;
+float:left;
+}
+div.column {
+padding-left: 5px;
+padding-right: 5px;
+width: 15.33%;
+float:left;
+}
+h3 {
+color:blue;
+}
+div.mess{
+font-size:25px;
+color:blue;}
+

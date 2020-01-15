@@ -1,0 +1,124 @@
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>GuessGame</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- Bootstrap -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+	<link rel="stylesheet" href="/guessnumber.css" type="text/css">
+
+
+</head>
+
+<body>
+<div class="container">
+
+		<section>
+			<div class="row">
+				<div class="col-sm-4 col-md-3">
+					<header>
+						<h3>
+							<span class=" pull-right">&nbsp;</span>
+						</h3>
+					</header>
+				</div>
+				<div class="col-sm-8 col-md-9">
+				<span class=nothing th:if="${@mainController.LoggedPlayer?.name}" /><br />
+
+					<div th:if="${@mainController.logged}" class="meno"
+						th:text="${@mainController.LoggedPlayer.name}" />
+					<br /> </span>
+<div th:if="${@mainController.logged}">
+						<form action="/logout">
+						<input type="submit" value="Logout" />
+					</form>
+					<br></div>
+	<div class="mess" th:utext="${@guessNumberController.message}"></div>
+	<section>
+		<div class="container">
+			<form action="/guessnumber/guess">
+				<input type="text" name="value"> <input type="submit"
+					value="Guess">
+			</form>
+			<h3>Rating</h3>
+					<span> 
+					<div class = "column">
+						<form action="/guessnumber/ratingbad">
+
+							<input type="image"
+								src="https://cdn.shopify.com/s/files/1/1061/1924/products/Sad_Face_Emoji_large.png?v=1571606037"
+								alt="Submit" width="100" height="100" />
+						</form>
+						</div>
+<div class = "column">
+						<form action="/guessnumber/ratingmedium">
+							<input type="image"
+								src="https://www.itpedia.nl/wp-content/uploads/2018/02/Thinking_Face_Emoji.png"
+								alt="Submit" width="100" height="100" />
+						</form>
+						</div>
+<div class = "column">
+						<form action="/guessnumber/ratingsuper">
+							<input type="image"
+								src="https://cdn.shopify.com/s/files/1/1061/1924/products/Smiling_Emoji_with_Smiling_Eyes_large.png?v=1571606035"
+								alt="Submit" width="100" height="100" />
+						</form>
+						</div>
+	<br>					</span>
+<br>					
+<br>
+<br>
+<br>
+					<h3>Last Rating</h3>
+					<ol class="pozadie1">
+						<li th:each="rating: ${@guessNumberController.rating}">
+						<span
+							th:text="${rating.name}" /> :
+						<span th:text="${rating.rating}" /></li>
+					</ol>
+					<br>
+					<h3>Average Rating</h3>
+<div class="rating" th:text="${@guessNumberController.averageRating}"/>
+<br>
+
+
+					<h3>Top Scores</h3>
+					<ol class="pozadie1">
+						<li th:each="score: ${@guessNumberController.scores}"><span
+							th:text="${score.username}" /> : <span th:text="${score.value}" /></li>
+					</ol>
+					<br>
+
+					<div th:if="${@mainController.logged}">
+						<form action="/guessnumber/comment">
+							<h3>Write you comment:</h3> <input type="text" name="content" /> <br />
+							<input type="submit" value="Send Comment" />
+						</form>
+					</div>
+
+
+
+					<h3>Comments</h3>
+					<div 
+						class="komentar" th:text="${@guessNumberController.message1}"></div>
+					<ol class="pozadie">
+						<li th:each="comments: ${@guessNumberController.comments}"><span
+							th:text="${comments.username}" /> : <span
+							th:text="${comments.content}" /></li>
+					</ol>
+			
+
+		
+					</div>
+
+				</div>
+		</section>
+</body>
+</body>
+</html>
+
+

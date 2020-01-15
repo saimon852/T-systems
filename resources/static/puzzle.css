@@ -1,0 +1,76 @@
+
+body {
+	background-image: url(https://giffiles.alphacoders.com/209/209037.gif);
+	background-attachment: auto background-repeat: no-repeat;;
+	background-position: right top;
+	background-size: 1980px 1080px;
+}
+
+h1 {
+	font-size: 70px;
+	color: white;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+div.meno {
+	font-size: 70px;
+	color: DarkGreen;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+div {
+	font-size: 15px;
+	color: White;
+	font-style: italic;
+}
+
+img {
+	img-size: 100dpi;
+}
+
+ol.pozadie {
+	font-size: 20px;
+	color: black;
+	font-style: italic;
+	background: DarkGreen;
+}
+
+ol.pozadie1 {
+	font-size: 20px;
+	color: black;
+	font-style: italic;
+	background: DarkGreen;
+}
+
+input[type=text] {
+	background-color: Green;
+	color: white;
+}
+
+span.meno {
+	font-size: 50px;
+	background-color: Black;
+	color: white;
+}
+
+h4.meno {
+	font-size: 20px;
+	background-color: #FF1493;
+	color: white;
+}
+div. {
+	font-size: 20px;
+	background-color: #FF1493;
+	color: white;
+}
+div.column {
+padding-left: 5px;
+padding-right: 5px;
+width: 15.33%;
+float:left;
+}
+div.rating {
+font-size:40px;
+color:yellow;}

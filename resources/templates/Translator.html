@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Translator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- Bootstrap -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+	<link rel="stylesheet" href="/translator.css" type="text/css">
+	<body>
+	
+	
+	<br><br><br><br><br><br><br><br><br><br><br>
+	
+	<div class="container">
+			<form action="/translator/translate">
+				<input type="text" name="value"> <input type="submit"
+					value="Translate">
+					
+	<div class="mess" th:utext="${@translatorController.message}"></div>
+	
+					
+</body>
+</html>

@@ -1,0 +1,58 @@
+
+body {
+	background-image: url(https://i.gifer.com/Z1Xg.gif);
+	background-attachment: auto background-repeat: no-repeat;;
+	background-position: right top;
+	background-size: 1920px 1800px;
+}
+
+h1 {
+	font-size: 40px;
+	color: #FF1493;
+	font-style: italic;
+}
+div.rating{
+font-size:50px;
+color:yellow;}
+h4 {
+	font-size: 40px;
+	color: #FF1493;
+	font-style: italic;
+}
+
+h2 {
+	font-size: 70px;
+	color: #FF1493;
+	font-style: italic;
+}
+
+div {
+	font-size: 20px;
+}
+
+ol.pozadie {
+	font-size: 20px;
+	color: #FF1493;
+	font-style: italic;
+	background: blue;
+}
+
+ol.pozadie1 {
+	font-size: 20px;
+	color: #FF1493;
+	font-style: italic;
+	background: blue;
+}
+
+input[type=text] {
+	background-color: Blue;
+	color: white;
+}
+div.smajlik {padding-left: 5px;
+padding-right: 5px;
+width: 15.33%;
+float:left;
+}
+div.meno{
+font-size:70px;
+color :#FF1493;}
